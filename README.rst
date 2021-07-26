@@ -8,7 +8,7 @@ Custom ordering for models in the admin app. You can define your order by ```adm
 Install
 ----------
 
-Install django-modeladmin-reorder:
+Install django-admin-modellist-order:
 
 
 
@@ -18,13 +18,13 @@ Install django-modeladmin-reorder:
 Configuration
 -------------
 
-1. Add `admin_reorder` to `INSTALLED_APPS`:
+1. Add `admin_model_list_order` to `INSTALLED_APPS`:
 
 
 
     INSTALLED_APPS = (
         ...
-        'admin_reorder',
+        'admin_model_list_order',
         ...
     )
 
