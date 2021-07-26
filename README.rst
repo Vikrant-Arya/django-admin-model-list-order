@@ -1,9 +1,10 @@
-==================================
+=============================
 django-admin-model-list-order
-==================================
+=============================
 
 
 Custom ordering for models in the admin app. You can define your order by ```admin_order``` in ModelAdmin
+
 
 Install
 ----------
@@ -13,6 +14,7 @@ Install django-modeladmin-reorder:
 .. code-block:: bash
 
     pip install django-admin-modellist-order
+
 
 Configuration
 -------------
@@ -40,6 +42,7 @@ Configuration
 
 3. Add the setting `admin_order` to your admin.py:
    .. code-block:: python
+
     class YourModelAdmin(admin.ModelAdmin):
-    model = YourModel
-    admin_order = 1
+        model = YourModel
+        admin_order = 1
