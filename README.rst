@@ -8,11 +8,11 @@ Custom ordering for models in the admin app. You can define your order by ```adm
 Install
 ----------
 
-Install django-admin-modellist-order:
+Install django-admin-model-list-order:
 
 
 
-    pip install django-admin-modellist-order
+    pip install django-admin-model-list-order
 
 
 Configuration
