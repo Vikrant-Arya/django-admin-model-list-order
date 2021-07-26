@@ -10,7 +10,7 @@ Install
 
 Install django-modeladmin-reorder:
 
-.. code-block:: bash
+
 
     pip install django-admin-modellist-order
 
@@ -20,7 +20,7 @@ Configuration
 
 1. Add `admin_reorder` to `INSTALLED_APPS`:
 
-.. code-block:: bash
+
 
     INSTALLED_APPS = (
         ...
@@ -31,7 +31,7 @@ Configuration
 
 2. Add the `ModelAdminReorder` to `MIDDLEWARE_CLASSES`:
 
-.. code-block:: bash
+
 
     MIDDLEWARE_CLASSES = (
         ...
@@ -41,7 +41,7 @@ Configuration
 
 3. Add the setting `admin_order` to your admin.py:
 
-.. code-block:: bash
+
 
     class YourModelAdmin(admin.ModelAdmin):
         model = YourModel
