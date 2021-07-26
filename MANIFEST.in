@@ -2,4 +2,4 @@ include Authors.rst
 include HISTORY.rst
 include LICENSE
 include README.rst
-recursive-include admin_mode_list_order *.html *.png *.gif *js *.css *jpg *jpeg *svg *py
+recursive-include admin_model_list_order *.html *.png *.gif *js *.css *jpg *jpeg *svg *py
