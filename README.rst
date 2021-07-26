@@ -1,6 +1,6 @@
-=============================
+==================================
 django-admin-model-list-order
-=============================
+==================================
 
 
 Custom ordering for models in the admin app. You can define your order by ```admin_order``` in ModelAdmin
