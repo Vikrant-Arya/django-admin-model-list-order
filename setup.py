@@ -21,6 +21,7 @@ setup(
     version=version,
     description="""Custom ordering for models in the admin app.""",
     long_description=readme + '\n\n' + history,
+    long_description_content_type="text/markdown",
     author='Vikrant Arya',
     author_email='vikrantarya21@gmail.com',
     url='https://github.com/Vikrant-Arya/django-admin-model-list-order',
