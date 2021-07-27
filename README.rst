@@ -29,7 +29,7 @@ Configuration
     )
 
 
-2. Add the `ModelAdminReorder` to `MIDDLEWARE_CLASSES`:
+2. Add the `AdminModelListOrder` to `MIDDLEWARE_CLASSES`:
 
 .. code-block:: bash
 
