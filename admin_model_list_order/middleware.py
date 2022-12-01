@@ -1,8 +1,9 @@
 """
-Version : 0.1.0
+Version : 0.1.1
 Assign admin_order = Integer
 Lower Integer will be on TOP and Higher Integer will be on bottom
 """
+
 from django.conf import settings
 try:
     from django.urls import resolve, Resolver404
@@ -60,11 +61,14 @@ class AdminModelListOrder(MiddlewareMixin):
                 url.url_name not in ['index', 'app_list']:
             return response
 
-        try:
+        if 'app_list' in response.context_data:
             app_list = response.context_data['app_list']
-        except KeyError:
-            return response
+            sorted_app_list = self.get_app_list(app_list)
+            response.context_data['app_list'] = sorted_app_list
 
-        sorted_app_list = self.get_app_list(app_list)
-        response.context_data['app_list'] = sorted_app_list
+        if 'available_apps' in response.context_data:
+            app_list = response.context_data['available_apps']
+            sorted_app_list = self.get_app_list(app_list)
+            response.context_data['available_apps'] = sorted_app_list
+
         return response
